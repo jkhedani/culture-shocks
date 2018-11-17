@@ -11,9 +11,9 @@ import * as stores from './stores';
 import CommList from "./components/CommunityList"
 
 const App = () => (
-	<Provider {...stores}>
-		<Router>
-			<div id="wrapper">
+  <Provider {...stores}>
+    <Router>
+      <div id="wrapper">
         <Switch>
           <Route exact path="/" component={Home} />
           <Route exact path="/commlist" component={CommList} />
@@ -21,12 +21,9 @@ const App = () => (
           <Route exact path="/onboard" component={Onboard} />
           <Route component={NoMatch} />	    		
         </Switch>
-			</div>
-    </Router>	  
-  </Provider>  
-)
-
-ReactDOM.render(
-	<App />,
-	document.getElementById('root')
+      </div>
+    </Router>
+  </Provider>
 );
+
+ReactDOM.render(<App />, document.getElementById("root"));

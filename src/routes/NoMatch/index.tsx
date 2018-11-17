@@ -1,11 +1,9 @@
 // @flow
 import React, { Component } from 'react';
-import {
-  Grid,
-} from 'react-bootstrap';
+import { Grid } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 
-class NoMatch extends Component<{}> {  
+class NoMatch extends Component<{}> {
   render() {
     return (
       <div className="App">
