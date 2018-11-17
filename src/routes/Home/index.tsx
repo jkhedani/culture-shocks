@@ -1,13 +1,13 @@
-import React, { Component } from "react";
-import Splash from "../../components/Splash";
+import React, { Component } from 'react';
+import Splash from '../../components/Splash';
 
 class Home extends Component<{}> {
   greeter = Person => {
-    return "Hello, " + Person.name;
+    return 'Hello, ' + Person.name;
   };
 
   render() {
-    const p = { name: "Parcel" };
+    const p = { name: 'Parcel' };
 
     return (
       <div>
