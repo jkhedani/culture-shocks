@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import SelectCountry from '../../components/SelectCountry';
+import SelectFeeling from '../../components/SelectFeeling';
 import { Link } from 'react-router-dom';
 
 class Onboard extends Component<{}> {
@@ -49,8 +51,8 @@ class Onboard extends Component<{}> {
         return (
           <div>
             <div className="content">
-              <h2>Slide B</h2>
-              <p>Test content as a paragraph</p>
+              <h3>Where are you originating from?</h3>
+              <SelectCountry />
               <button
                 onClick={() => {
                   this.goSlide(1);
@@ -74,8 +76,8 @@ class Onboard extends Component<{}> {
         return (
           <div>
             <div className="content">
-              <h2>Slide C</h2>
-              <p>Test content as a paragraph</p>
+              <h3>How are you feeling?</h3>
+              <SelectFeeling />
               <button
                 onClick={() => {
                   this.goSlide(2);
