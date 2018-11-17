@@ -7,7 +7,12 @@ class Home extends Component<{}> {
     return "Hello, " + Person.name;
 	}
 	
+	componentDidMount() {
+		setTimeout(function () {   window.scrollTo(0, 20); }, 1000);
+	}
+
 	render() {
+		
 		const p = { name: "Home" }
 		return (
 			<div>
