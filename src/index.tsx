@@ -8,21 +8,18 @@ import "./styles/index.scss"
 import * as stores from './stores';
 
 const App = () => (
-	<Provider {...stores}>
-		<Router>
-			<div id="wrapper">
+  <Provider {...stores}>
+    <Router>
+      <div id="wrapper">
         <Switch>
           <Route exact path="/login" component={Login} />
           <Route exact path="/onboard" component={Onboard} />
           <Route exact path="/" component={Home} />
-          <Route component={NoMatch} />	    		
+          <Route component={NoMatch} />
         </Switch>
-			</div>
-    </Router>	  
-  </Provider>  
-)
-
-ReactDOM.render(
-	<App />,
-	document.getElementById('root')
+      </div>
+    </Router>
+  </Provider>
 );
+
+ReactDOM.render(<App />, document.getElementById("root"));
