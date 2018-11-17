@@ -1,11 +1,11 @@
 import Home from "./Home"
-import NotHome from "./NotHome"
 import Login from "./Login"
 import NoMatch from "./NoMatch"
+import Onboard from "./Onboard"
 
 export {
 	Home,
-	NotHome,
+	Onboard,
 	Login,
 	NoMatch
 }

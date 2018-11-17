@@ -10,6 +10,10 @@ class Home extends Component<{}> {
 	componentDidMount() {
 		setTimeout(function () {   window.scrollTo(0, 20); }, 1000);
 	}
+	transition() {
+		
+	}
+	
 
 	render() {
 		
@@ -17,7 +21,7 @@ class Home extends Component<{}> {
 		return (
 			<div>
 				<h1>{this.greeter(p)}</h1>
-				<Link to="/not-home">NotHome</Link>
+				<Link to="/not-home" innerRef={this.transition()}>NotHome</Link>
 				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vitae venenatis magna. Phasellus vitae laoreet purus. Nam id blandit nunc. Integer non erat nec enim congue tempus a ut nibh. Phasellus elementum mauris nec lectus gravida auctor. Suspendisse ut pellentesque lectus. Nullam ut dictum arcu, in tristique mauris. Ut et mollis mi. Duis semper leo nec consequat placerat.
 
 Phasellus tincidunt eleifend eros, a aliquet purus fringilla eget. Phasellus rhoncus purus sit amet nibh tristique ornare. Aenean eu nisi in lectus egestas tempor id vitae nisi. Pellentesque rhoncus, dui a lacinia hendrerit, nunc lacus imperdiet mi, a consequat tortor nibh ac erat. Aenean eleifend cursus varius. Praesent et euismod neque. Donec ornare turpis nec sapien tristique, at fermentum eros vestibulum. Praesent dictum purus eu convallis sollicitudin.
