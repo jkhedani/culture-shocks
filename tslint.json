@@ -1,0 +1,13 @@
+{
+  "extends": ["tslint:latest", "tslint-react"],  
+  "defaultSeverity": "warning",
+  "linterOptions": {
+    "exclude": [
+      "config/**/*.js",
+      "node_modules/**/*.ts"
+    ]
+  },
+  "rules": {
+    "jsx-wrap-multiline": false
+  }
+}
