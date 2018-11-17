@@ -1,4 +1,5 @@
 import React, { Component } from "react"
+import { Link } from "react-router-dom"
 
 class NotHome extends Component<{}> {
 	
@@ -7,10 +8,11 @@ class NotHome extends Component<{}> {
 	}
 	
 	render() {
-		const p = { name: "Parcel" }
+		const p = { name: "NotHome" }
 		return (
 			<div>
 				<h1>{this.greeter(p)}</h1>
+				<Link to="/">Home</Link>
 			</div>
 		)
 	}
