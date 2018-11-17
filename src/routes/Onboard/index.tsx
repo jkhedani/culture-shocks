@@ -13,7 +13,7 @@ class Onboard extends Component<{}> {
 
   renderDotnav() {
     const nav = [];
-    for (let i = 1; i <= 3; i++) {
+    for (let i = 1; i <= 2; i++) {
       nav.push(
         <button key={i} className="dot">
           {i}
@@ -30,24 +30,6 @@ class Onboard extends Component<{}> {
   render() {
     switch (this.state.slide) {
       case 1:
-        return (
-          <div>
-            <div className="content">
-              <h2>Slide A</h2>
-              <p>Test content as a paragraph</p>
-              <button
-                onClick={() => {
-                  this.goSlide(2);
-                }}
-              >
-                Next
-              </button>
-            </div>
-            <div>{this.renderDotnav()}</div>
-          </div>
-        );
-        break;
-      case 2:
         return (
           <div>
             <div className="content">
