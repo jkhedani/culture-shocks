@@ -35,16 +35,10 @@ class Onboard extends Component<{}> {
             <div className="content">
               <h3>Where are you originating from?</h3>
               <SelectCountry />
+
               <button
                 onClick={() => {
-                  this.goSlide(1);
-                }}
-              >
-                Prev
-              </button>
-              <button
-                onClick={() => {
-                  this.goSlide(3);
+                  this.goSlide(2);
                 }}
               >
                 Next
@@ -62,7 +56,7 @@ class Onboard extends Component<{}> {
               <SelectFeeling />
               <button
                 onClick={() => {
-                  this.goSlide(2);
+                  this.goSlide(1);
                 }}
               >
                 Prev
