@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
-import SelectCountry from './SelectCountry';
-import SelectFeeling from './SelectFeeling';
 import { Link } from 'react-router-dom';
+
+import WriteShock from "./WriteShock"
+import SelectShockType from "./SelectShockType"
 
 class Write extends Component<{}> {
   constructor(props) {
@@ -33,8 +34,7 @@ class Write extends Component<{}> {
         return (
           <div className="slide onboard-div">
             <div className="content">
-              <h3>Where are you originating from?</h3>
-              <SelectCountry />
+              <WriteShock />
 
               <button
                 onClick={() => {
@@ -44,7 +44,6 @@ class Write extends Component<{}> {
                 Next
               </button>
             </div>
-            <div>{this.renderDotnav()}</div>
           </div>
         );
         break;
@@ -52,9 +51,7 @@ class Write extends Component<{}> {
         return (
           <div className="slide onboard-div">
             <div className="content feeling">
-              <h3>How are you feeling?</h3>
-              <h2 className="image"> image here</h2>
-              <SelectFeeling />
+              <SelectShockType />
               <button
                 onClick={() => {
                   this.goSlide(1);
@@ -64,7 +61,6 @@ class Write extends Component<{}> {
               </button>
               <Link to="/dashboard">Done</Link>
             </div>
-            <div>{this.renderDotnav()}</div>
           </div>
         );
         break;
