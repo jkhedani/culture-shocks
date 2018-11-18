@@ -5,31 +5,31 @@ class SelectFeeling extends Component<{}> {
     return (
       <div>
         <div>
-          <span className="fas fa-circle" />
+          <span className="far fa-smile-beam" />
           <button type="button" className="feeling">
             Happiness
           </button>
         </div>
         <div>
-          <span className="fas fa-circle" />
+          <span className="far fa-sad-cry" />
           <button type="button" className="feeling">
             Sadness
           </button>
         </div>
         <div>
-          <span className="fas fa-circle" />
+          <span className="far fa-meh-rolling-eyes" />
           <button type="button" className="feeling">
             Disgust
           </button>
         </div>
         <div>
-          <span className="fas fa-circle" />
+          <span className="far fa-frown-open" />
           <button type="button" className="feeling">
             Fear
           </button>
         </div>
         <div>
-          <span className="fas fa-circle" />
+          <span className="far fa-angry" />
           <button type="button" className="feeling">
             Anger
           </button>
