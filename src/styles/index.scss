@@ -58,7 +58,7 @@ $robotoMono: "Roboto Mono", sans-serif;
   text-align: center;
 
 }
-.slide {
+.slide, .slide-first {
   padding: 40px;
   font-family: 'Noto Sans SC', sans-serif;
   font-size: 10px;
@@ -77,7 +77,24 @@ $robotoMono: "Roboto Mono", sans-serif;
 }
 .slide{
   background-color: #f3f3f3;
+  height: -webkit-fill-available;
+}
+.slide-first {
+  background-color: #655BA1;
+  height: -webkit-fill-available;
+}
+.countries {
+  color: white;
+  margin-top: 100px;
+  text-align: center;
+  line-height: 30px;
 }
 button {
   text-align: center;
+
+}
+.splash-logo {
+  background: url("../media/spash.png");
+  background-size: cover;
+  background-repeat: no-repeat;
 }

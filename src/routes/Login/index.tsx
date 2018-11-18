@@ -9,7 +9,7 @@ class Home extends Component<{}> {
   render() {
     return (
       <div>
-        <h1>{'Login'}</h1>
+        <h1></h1>
         <form>
           <img
             src={require('../../media/Logo/Logo Color/culture-shocks-logo@4x.png')}

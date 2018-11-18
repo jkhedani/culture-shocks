@@ -31,12 +31,12 @@ class Onboard extends Component<{}> {
     switch (this.state.slide) {
       case 1:
         return (
-          <div className="slide onboard-div">
+          <div className="slide-first onboard-div">
             <div className="content">
-              <h3>Where are you originating from?</h3>
+              <h3 className ="countries">Where are you originating from?</h3>
               <SelectCountry />
 
-              <button
+              <button className="button"
                 onClick={() => {
                   this.goSlide(2);
                 }}
