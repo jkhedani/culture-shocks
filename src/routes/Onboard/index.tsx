@@ -31,7 +31,7 @@ class Onboard extends Component<{}> {
     switch (this.state.slide) {
       case 1:
         return (
-          <div>
+          <div className="slide onboard-div">
             <div className="content">
               <h3>Where are you originating from?</h3>
               <SelectCountry />
@@ -56,13 +56,14 @@ class Onboard extends Component<{}> {
         break;
       default:
         return (
-          <div>
-            <div className="content">
+          <div className="slide onboard-div">
+            <div className="content feeling">
               <h3>How are you feeling?</h3>
+              <h2 className="image"> image here</h2>
               <SelectFeeling />
               <button
                 onClick={() => {
-                  this.goSlide(2);
+                  this.goSlide(1);
                 }}
               >
                 Prev
