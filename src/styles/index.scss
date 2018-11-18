@@ -40,8 +40,36 @@ $robotoMono: "Roboto Mono", sans-serif;
   opacity: 1;
   transition: opacity 250ms ease-in;
 }
+.container {
 
 
 /**
  * Culture Shocks
  */
+}
+.container .row {
+    margin-left: -.75rem;
+    margin-right: -.75rem;
+    text-align: center;
+
+
+}
+.footer-name {
+  text-align: center;
+
+}
+.slide {
+  padding: 40px;
+  font-family: 'Noto Sans SC', sans-serif;
+  font-size: 10px;
+  background: linear-gradient(90deg,#e1eec3, #f05053)
+}
+.fonts {
+  font-size: 30px;
+}
+.feeling {
+  color: purple;
+}
+.image {
+  background: url("./")
+}

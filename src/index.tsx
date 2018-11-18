@@ -3,7 +3,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { Provider } from 'mobx-react';
 import { BrowserRouter as Router, Route, Switch, Redirect } from "react-router-dom";
-import { Home, Onboard, Login, NoMatch } from './routes';
+import { Home, Onboard, Dashboard, Login, NoMatch } from './routes';
 import "./styles/index.scss"
 import * as stores from './stores';
 
@@ -19,7 +19,7 @@ const App = () => (
           <Route exact path="/commlist" component={CommList} />
           <Route exact path="/login" component={Login} />
           <Route exact path="/onboard" component={Onboard} />
-          <Route exact path="/" component={Splash} />
+          <Route path = "/dashboard" component = {Dashboard} />
           <Route component={NoMatch} />	    		
         </Switch>
       </div>
