@@ -9,16 +9,16 @@ class CultureShock_Store {
   
   CultureShocks = [
     {
-      "title": "Travelling to a new culture",
-      "desc": "A description for culture shock",
+      "title": "Travelling to a new culture can",
+      "desc": "mean seeing things on the menu that you never even knew you could eat. You don't have to scarf down every weird thing you but",
       "username": "Justin",
       "avatar_path": "",
       "time": "1 hour ago",
       "membership":"",
     },
     {
-      "title": "NextTitle",
-      "desc": "A description for culture shock",
+      "title": "Travelling to a new culture can",
+      "desc": "mean seeing things on the menu that you never even knew you could eat. You don't have to scarf down every weird thing you but",
       "username": "Justin",
       "avatar_path": "",
     }

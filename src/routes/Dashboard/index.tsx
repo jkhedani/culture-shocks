@@ -1,6 +1,7 @@
 import React, { Component } from "react"
 import { Link } from "react-router-dom"
 
+import "./Dashboard.css"
 import CommList from "../../components/CommunityList"
 import Write from "../../components/Write"
 // import Account from "../../components/Account"
@@ -16,7 +17,7 @@ class Dashboard extends Component<{}> {
 
   renderFooter() {
     return (
-      <div className="container">
+      <div id="footer" className="container">
         <div className="row">
           <div className="col s4">
             <a onClick={() => { this.goSlide(1) }}>
@@ -75,9 +76,7 @@ class Dashboard extends Component<{}> {
         return (
           <div>
             <div className="content">
-              <h2>Slide C</h2>
-              <p>Test content as a paragraph</p>
-              <button onClick={() => { this.goSlide(2) }}>Prev</button>
+              <img className="my-journey" src={require("../../media/my-journey.jpg")} />
             </div>
             <div>
               {this.renderFooter()}

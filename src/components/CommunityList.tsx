@@ -22,7 +22,6 @@ class CommList extends Component<{}> {
           <h3>{cshocks[i].title}</h3>
           <p>{cshocks[i].desc}</p>
           <div>
-            <button>[]{cshocks[i].user}</button>
             <button>I Relate</button>
           </div>
         </div>
@@ -56,6 +55,10 @@ class CommList extends Component<{}> {
     
     return (
       <div>
+        <select>
+          <option value="trending">Trending</option>
+        </select>
+        <p>We have 10,569 shockers in the</p>
         <h1>Academic community</h1>
         {this.renderCultureShocks(t)}
         {this.state.modalVisible ? this.renderModal(t[0].title,t[0].desc) : null}
