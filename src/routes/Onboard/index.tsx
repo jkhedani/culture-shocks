@@ -61,6 +61,7 @@ class Onboard extends Component<{}> {
               >
                 Prev
               </button>
+              <Link to="/dashboard">Done</Link>
             </div>
             <div>{this.renderDotnav()}</div>
           </div>
