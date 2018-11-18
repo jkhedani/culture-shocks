@@ -1,6 +1,9 @@
 import React, { Component } from "react"
 import { Link } from "react-router-dom"
 
+import CommList from "../../components/CommunityList"
+import Write from "../../components/Write"
+// import Account from "../../components/Account"
 
 class Dashboard extends Component<{}> {
 
@@ -11,23 +14,29 @@ class Dashboard extends Component<{}> {
     }
   }
 
-  renderDotnav() {
+  renderFooter() {
     return (
       <div className="container">
         <div className="row">
           <div className="col s4">
-            <i className="fonts fas fa-globe"></i>
+            <a onClick={() => { this.goSlide(1) }}>
+              <i className="fonts fas fa-globe"></i>
               <p className="footer-name">Community</p>
+            </a>
           </div>
           <div className="col s4">
-            <i className=" fonts far fa-edit"></i>
+            <a onClick={() => { this.goSlide(2) }}>
+              <i className=" fonts far fa-edit"></i>
               <p className="footer-name">Write</p>
+            </a>
           </div>
           <div className="col s4">
-            <i className="fonts far fa-user-circle"></i>
+            <a onClick={() => { this.goSlide(3) }}>
+              <i className="fonts far fa-user-circle"></i>
               <p className="footer-name">Account</p>
-            </div>
+            </a>
           </div>
+        </div>
       </div>
     )
   }
@@ -40,43 +49,38 @@ class Dashboard extends Component<{}> {
     switch (this.state.slide) {
       case 1:
         return (
-          <div>    
+          <div>
             <div className="content">
-              <h2>Slide A</h2>
-              <p>Test content as a paragraph</p>
-              <button onClick={() => { this.goSlide(2) }}>Next</button>
+              <CommList />
             </div>
             <div>
-              {this.renderDotnav()}
+              {this.renderFooter()}
             </div>
           </div>
         )
         break;
       case 2:
         return (
-          <div>    
+          <div>
             <div className="content">
-              <h2>Slide B</h2>
-              <p>Test content as a paragraph</p>
-              <button onClick={() => { this.goSlide(1) }}>Prev</button>
-              <button onClick={() => { this.goSlide(3) }}>Next</button>
+              <Write />
             </div>
             <div>
-              {this.renderDotnav()}
+              {this.renderFooter()}
             </div>
           </div>
         )
         break;
       default:
         return (
-          <div>    
+          <div>
             <div className="content">
               <h2>Slide C</h2>
               <p>Test content as a paragraph</p>
               <button onClick={() => { this.goSlide(2) }}>Prev</button>
             </div>
             <div>
-              {this.renderDotnav()}
+              {this.renderFooter()}
             </div>
           </div>
         )
