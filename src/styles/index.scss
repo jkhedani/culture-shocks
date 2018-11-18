@@ -58,7 +58,7 @@ $robotoMono: "Roboto Mono", sans-serif;
   padding: 40px;
   font-family: 'Noto Sans SC', sans-serif;
   font-size: 10px;
-  background: linear-gradient(90deg,#e1eec3, #f05053)
+  // background: linear-gradient(90deg,#e1eec3, #f05053)
 }
 .fonts {
   font-size: 30px;
@@ -67,5 +67,13 @@ $robotoMono: "Roboto Mono", sans-serif;
   color: purple;
 }
 .image {
-  background: url("./")
+  background: url("../media/feelings.png");
+  background-size: cover;
+  height: 400px;
+}
+.slide{
+  background-color: #f3f3f3;
+}
+button {
+  text-align: center;
 }

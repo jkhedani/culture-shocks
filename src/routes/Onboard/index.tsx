@@ -59,8 +59,8 @@ class Onboard extends Component<{}> {
           <div className="slide onboard-div">
             <div className="content feeling">
               <h3>How are you feeling?</h3>
-              <h2 className="image"> image here</h2>
-              <SelectFeeling />
+              <h2 className="image"> </h2>
+              
               <button
                 onClick={() => {
                   this.goSlide(1);
