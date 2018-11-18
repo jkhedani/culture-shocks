@@ -4,11 +4,10 @@ import NoMatch from "./NoMatch"
 import Onboard from "./Onboard"
 import Dashboard from "./Dashboard"
 
-
 export {
 	Home,
 	Onboard,
 	Login,
 	NoMatch,
-	Dashboard
+	Dashboard,
 }

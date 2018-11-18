@@ -11,6 +11,10 @@ class Home extends Component<{}> {
       <div>
         <h1>{'Login'}</h1>
         <form>
+          <img
+            src={require('../../media/Logo/Logo Color/culture-shocks-logo@4x.png')}
+            alt="splash-logo"
+          />
           <div>Logo</div>
           <input name="username" type="text" placeholder="username" />
           <input name="password" type="password" placeholder="password" />

@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
-import SelectCountry from '../../components/SelectCountry';
-import SelectFeeling from '../../components/SelectFeeling';
+import SelectCountry from './SelectCountry';
+import SelectFeeling from './SelectFeeling';
 import { Link } from 'react-router-dom';
 
-class Onboard extends Component<{}> {
+class Write extends Component<{}> {
   constructor(props) {
     super(props);
     this.state = {
@@ -53,8 +53,8 @@ class Onboard extends Component<{}> {
           <div className="slide onboard-div">
             <div className="content feeling">
               <h3>How are you feeling?</h3>
-              <h2 className="image"> </h2>
-              
+              <h2 className="image"> image here</h2>
+              <SelectFeeling />
               <button
                 onClick={() => {
                   this.goSlide(1);
@@ -72,4 +72,4 @@ class Onboard extends Component<{}> {
   }
 }
 
-export default Onboard;
+export default Write;
