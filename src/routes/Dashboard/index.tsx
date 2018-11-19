@@ -1,7 +1,7 @@
 import React, { Component } from "react"
 import { Link } from "react-router-dom"
 
-import "./Dashboard.css"
+import "./Dashboard.scss"
 import CommList from "../../components/CommunityList"
 import Write from "../../components/Write"
 // import Account from "../../components/Account"
