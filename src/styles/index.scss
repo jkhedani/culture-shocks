@@ -29,3 +29,72 @@ $robotoMono: "Roboto Mono", sans-serif;
 }
 
 
+/**
+ * CSS Transition
+ */ 
+.fade-enter {
+  opacity: 0;
+  z-index: 1;
+}
+.fade-enter.fade-enter-active {
+  opacity: 1;
+  transition: opacity 250ms ease-in;
+}
+.container {
+
+
+/**
+ * Culture Shocks
+ */
+}
+.container .row {
+    margin-left: -.75rem;
+    margin-right: -.75rem;
+    text-align: center;
+
+
+}
+.footer-name {
+  text-align: center;
+
+}
+.slide, .slide-first {
+  padding: 40px;
+  font-family: 'Noto Sans SC', sans-serif;
+  font-size: 10px;
+  // background: linear-gradient(90deg,#e1eec3, #f05053)
+}
+.fonts {
+  font-size: 30px;
+}
+.feeling {
+  color: purple;
+}
+.image {
+  background: url("../media/feelings.png");
+  background-size: cover;
+  height: 400px;
+}
+.slide{
+  background-color: #f3f3f3;
+  height: -webkit-fill-available;
+}
+.slide-first {
+  background-color: #655BA1;
+  height: -webkit-fill-available;
+}
+.countries {
+  color: white;
+  margin-top: 100px;
+  text-align: center;
+  line-height: 30px;
+}
+button {
+  text-align: center;
+
+}
+.splash-logo {
+  background: url("../media/spash.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}

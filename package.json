@@ -6,6 +6,7 @@
   "license": "MIT",
   "private": true,
   "dependencies": {
+    "@fortawesome/react-fontawesome": "^0.1.3",
     "autoprefixer": "^8.4.1",
     "bootstrap": "3",
     "bootstrap-sass": "^3.3.7",
@@ -30,11 +31,13 @@
     "react-highcharts": "^16.0.2",
     "react-icons": "^2.2.7",
     "react-router-dom": "^4.2.2",
-    "react-spinners": "^0.3.2"
+    "react-spinners": "^0.3.2",
+    "react-transition-group": "^2.5.0"
   },
   "devDependencies": {
     "@babel/cli": "^7.1.0",
     "@babel/core": "^7.1.0",
+    "@fortawesome/fontawesome-free": "^5.5.0",
     "babel-eslint": "^8.2.3",
     "babel-jest": "^22.4.3",
     "babel-plugin-transform-async-to-generator": "^6.24.1",
@@ -52,15 +55,15 @@
     "jest": "^23.1.0",
     "jsdoc": "^3.5.5",
     "react-test-renderer": "^16.4.1",
-    "typescript": "^3.1.6",
-    "tslint": "^5.11.0"
+    "tslint": "^5.11.0",
+    "typescript": "^3.1.6"
   },
   "scripts": {
     "start": "parcel src/index.html",
     "build": "parcel build src/index.html --no-source-maps",
     "deploy": "yarn docker:build && yarn docker:login && yarn docker:tag && yarn docker:push",
     "docker": "docker run -p 3000:3000 parcel-bootstrap-ts",
-    "docker:build": "docker build -t parcel-bootstrap-ts .",    
+    "docker:build": "docker build -t parcel-bootstrap-ts .",
     "docker:login": "$(aws ecr get-login --profile justin --no-include-email --region us-west-2)",
     "docker:tag": "docker tag parcel-bootstrap-ts:latest 791906567261.dkr.ecr.us-west-2.amazonaws.com/parcel-bootstrap-ts:latest",
     "docker:push": "docker push 791906567261.dkr.ecr.us-west-2.amazonaws.com/parcel-bootstrap-ts:latest",
