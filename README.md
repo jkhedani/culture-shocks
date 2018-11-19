@@ -7,6 +7,25 @@
 	$ yarn
 	$ yarn start
 
+## Deployment
+
+	$ yarn build
+
+Optionally, you can then place build in a Docker environment:
+
+	$ yarn docker:build
+	$ yarn docker:tag
+
+## Source Overview
+
+`dist/` Static build folder for deployment (gets created after build)
+`src/`	Source files for project
+`src/components/` Various React component files and styles
+`src/media/` Graphics, etc.
+`src/routes/` Entry way into the various
+`src/styles/` Various styles and CSS frameworks folder 
+`src/index.tsx` Entry way into the app
+
 ## Environmental Variables
 
 The `create-react-app` script/package can't deal with simple things like making the changing of environmental variables and deployment locations easy so: 
