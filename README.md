@@ -92,7 +92,7 @@ $ sudo yum update -y
 $ sudo yum install -y docker
 $ sudo usermod -a -G docker ec2-user
 ```
-(reboot ec2)
+... reboot ec2
 ```
 $ sudo service docker start
 ```
@@ -107,7 +107,7 @@ $ docker run -p 80:3000791906567261.dkr.ecr.us-west-2.amazonaws.com/parcel-boots
 
 ## Versioning
 
-This project uses [SemVer](http://semver.org/) for versioning. For the version information, refer to the [CHANGELOG](https://github.com/jkhedani/culture-shocks/blob/master/CHANGELOG.md).
+This project uses [SemVer](http://semver.org/) for versioning. For the version information, refer to the [change log](https://github.com/jkhedani/culture-shocks/blob/master/CHANGELOG.md).
 
 ## IDE Config (VSCode)
 
