@@ -73,9 +73,9 @@ $ yarn docker:tag
 ## Environmental Variables
 
 The `create-react-app` script/package can't deal with simple things like making the changing of environmental variables and deployment locations easy so:
-a) Modify .env.local for local env adjustments
-b) edit the package.JSON when building for staging or production
-c) Use a Parcel bootstrap for first
+1. Modify .env.local for local env adjustments
+2. Edit the package.JSON when building for staging or production
+3. Use a Parcel bootstrap for first
 
 ## Deployment (AWS)
 
@@ -91,7 +91,9 @@ https://www.npmjs.com/package/serve
 $ sudo yum update -y
 $ sudo yum install -y docker
 $ sudo usermod -a -G docker ec2-user
+```
 (reboot ec2)
+```
 $ sudo service docker start
 ```
 
