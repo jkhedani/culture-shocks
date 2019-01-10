@@ -2,7 +2,9 @@
 
 An app to help international students overcome culture shock and develop cross-cultural competence.
 
-For more information, refer to the Culture Shocks project page at DemocracyLab: https://www.democracylab.org/index/?section=AboutProject&id=95
+For more information, refer to the Culture Shocks project page at DemocracyLab:
+
+https://www.democracylab.org/index/?section=AboutProject&id=95
 
 ## Getting Started
 
@@ -14,8 +16,8 @@ This project was started using the [Parcel Create React App](https://github.com/
 
 ### Prerequisites
 
-[Yarn](https://yarnpkg.com/) (1.10.1) - Package Manager
-[Parcel](https://parceljs.org/) (1.10) - Web App Bundler
+- [Yarn](https://yarnpkg.com/) (1.10.1) - Package Manager
+- [Parcel](https://parceljs.org/) (1.10) - Web App Bundler
 
 ### Installing
 
@@ -60,13 +62,13 @@ $ yarn docker:tag
 
 ## Source Overview
 
-`dist/` Static build folder for deployment (gets created after build)
-`src/` Source files for project
-`src/components/` Various React component files and styles
-`src/media/` Graphics, etc.
-`src/routes/` Entry way into the various
-`src/styles/` Various styles and CSS frameworks folder
-`src/index.tsx` Entry way into the app
+- `dist/` Static build folder for deployment (gets created after build)
+- `src/` Source files for project
+- `src/components/` Various React component files and styles
+- `src/media/` Graphics, etc.
+- `src/routes/` Entry way into the various
+- `src/styles/` Various styles and CSS frameworks folder
+- `src/index.tsx` Entry way into the app
 
 ## Environmental Variables
 
