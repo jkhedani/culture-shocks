@@ -12,7 +12,7 @@ These instructions will get you a copy of the project up and running on your loc
 
 ### Boilerplate
 
-This project was started using the [Parcel Create React App](https://github.com/jkhedani/parcel-create-react-app) boilerplate code by Justin Hedani.
+This project was started using the [Parcel Create React App](https://github.com/jkhedani/parcel-create-react-app) boilerplate code (1.1.7) by Justin Hedani.
 
 ### Prerequisites
 
