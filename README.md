@@ -39,7 +39,7 @@ Install dependencies
 $ yarn
 ```
 
-Run locally
+Run locally & visit http://localhost:1234
 
 ```
 $ yarn start
